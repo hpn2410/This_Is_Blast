@@ -491,7 +491,10 @@ PlayerSettings:
   m_BuildTargetGroupLightmapSettings: []
   m_BuildTargetGroupLoadStoreDebugModeSettings: []
   m_BuildTargetNormalMapEncoding: []
-  m_BuildTargetDefaultTextureCompressionFormat: []
+  m_BuildTargetDefaultTextureCompressionFormat:
+  - serializedVersion: 3
+    m_BuildTarget: WebGL
+    m_Formats: 05000000
   playModeTestRunnerEnabled: 0
   runPlayModeTestAsEditModeTest: 0
   actionOnDotNetUnhandledException: 0
@@ -779,15 +782,15 @@ PlayerSettings:
   m_RenderingPath: 0
   m_MobileRenderingPath: 0
   metroPackageName: 
-  metroPackageVersion: 
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: daf06edb8a9952ca
-  metroApplicationDescription: 
+  metroApplicationDescription: GameFramework
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: GameFramework
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
