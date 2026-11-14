@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BulletController : MonoBehaviour
 {
-    private float speed = 100f;
+    private float speed = 1000f;
 
     private GameObject target;
 
@@ -27,6 +27,7 @@ public class BulletController : MonoBehaviour
         if (Vector3.Distance(transform.position, target.transform.position) <= 0.01f)
         {
             Destroy(target);
+            //target.SetActive(false);
             Destroy(gameObject);
         }
     }
