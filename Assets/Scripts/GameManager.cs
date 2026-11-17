@@ -3,13 +3,15 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private LevelDatabase levelDatabase;
+    [SerializeField] private bool IsEnableCheat;
+    [SerializeField] private int level_Index;
 
     private GameObject currentLevelInstance;
     private int currentLevelIndex = -1;
 
     private void Start()
     {
-        LoadLevel(0);
+        LoadLevel(IsEnableCheat ? level_Index : 0);
     }
 
     public void CompleteCurrentLevel()

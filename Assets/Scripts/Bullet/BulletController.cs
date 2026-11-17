@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BulletController : MonoBehaviour
 {
-    private float speed = 1000f;
+    private float speed = 2000f;
 
     private GameObject target;
 
