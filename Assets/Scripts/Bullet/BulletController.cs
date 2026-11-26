@@ -33,12 +33,22 @@ public class BulletController : MonoBehaviour
 
         if (Vector3.Distance(transform.position, target.transform.position) <= 0.01f)
         {
-            if (promoteChildrenOnHit)
+            MultiHitTargetController multiHitTarget = target.GetComponent<MultiHitTargetController>();
+
+            if (multiHitTarget != null)
             {
-                PromoteChildren(target);
+                multiHitTarget.RegisterHit(promoteChildrenOnHit);
+            }
+            else
+            {
+                if (promoteChildrenOnHit)
+                {
+                    PromoteChildren(target);
+                }
+
+                target.SetActive(false);
             }
 
-            target.SetActive(false);
             Destroy(gameObject);
         }
     }
